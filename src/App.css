@@ -1,0 +1,22 @@
+.container{
+  max-width: 600px; /*define a largura maxima*/
+  margin: 20px; /* define as margens superior e inferior */
+  padding: 20px; /* define em pixels o espaço interno em todos os lados do elemento*/
+}
+
+.input{
+  margin-bottom: 10px; /* define a margem inferior, cria um espaço abaixo de cada elementp */
+}
+
+.button {
+  background-color: gray; /*define a cor de fundo dos elementos*/
+  color: white; /* define a cor do texto*/
+  border: none; /* remove a borda*/
+  padding: 10px 20px;
+  cursor: pointer; /* define o cursos do mouse como um ponteiro quando passa sobre os elementos*/
+}
+
+.label{
+  margin-top: 10px;
+  color: red;
+}
