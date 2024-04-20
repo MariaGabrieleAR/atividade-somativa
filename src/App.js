@@ -5,15 +5,19 @@ function Login(){
   const[email, setEmail] = useState('');
   const[senha, setSenha] = useState('');
   const[mensagem, setMensagem] = useState('');
+  const [classeMensagem, setClasseMensagem] = useState('');
 
 
-const handleLogin = () => {
-  if(email === 'maria.gabriele@pucpr.br' && senha === '246810'){
-    setMensagem('Acessado com Sucesso!');
-  }else{
-    setMensagem('Usuário ou senha incorretos!')
+  const handleLogin = () => {
+    if(email === 'maria.gabriele@pucpr.br' && senha === '246810'){
+      setMensagem('Acessado com Sucesso!');
+      setClasseMensagem('message-correct'); 
+    } else {
+      setMensagem('Usuário ou senha incorretos!');
+      setClasseMensagem('message-incorrect'); 
   }
-}
+} 
+  
 
 return(
   <div className="container">
@@ -35,7 +39,7 @@ return(
     <br/>
     <button className="button" onClick={handleLogin}>Acessar</button>
     <br/>
-    <label className="message" >{mensagem}</label>
+    <label className={`message ${classeMensagem}`} >{mensagem}</label>
   </div>
 );
 

@@ -2,10 +2,20 @@
   max-width: 600px; /*define a largura maxima*/
   margin: 20px; /* define as margens superior e inferior */
   padding: 20px; /* define em pixels o espaço interno em todos os lados do elemento*/
+  width: 300px; /* largura desejada */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightgray; /* apenas para visualização */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+   
 }
 
 .input{
   margin-bottom: 10px; /* define a margem inferior, cria um espaço abaixo de cada elementp */
+
 }
 
 .button {
@@ -18,5 +28,14 @@
 
 .label{
   margin-top: 10px;
+  color: red;
+}
+
+.message-correct {
+  color: green;
+}
+
+/* Estilos para a mensagem incorreta */
+.message-incorrect {
   color: red;
 }
